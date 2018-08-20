@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cache.eshop.product.model.ShopInfo">
+
+    <update id="updateShopInfo" parameterType="com.cache.eshop.product.model.ShopInfo">
+        update shop_info
+        set id=#{id} ,
+        set name=#{name} ,
+        set level=#{level} ,
+        set goodCommentRate=#{goodCommentRate}
+        where id=#{id}
+    </update>
+
+    <select id="findShopInfo" resultType="com.cache.eshop.product.model.ShopInfo">
+        select * from shop_info where id=#{shopId}
+    </select>
+</mapper>
