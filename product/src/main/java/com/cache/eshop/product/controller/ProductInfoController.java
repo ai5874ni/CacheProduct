@@ -4,6 +4,9 @@ package com.cache.eshop.product.controller;
 import com.cache.eshop.product.model.ProductInfo;
 import com.cache.eshop.product.service.ProductInfoService;
 import com.cache.eshop.product.vo.Response;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 

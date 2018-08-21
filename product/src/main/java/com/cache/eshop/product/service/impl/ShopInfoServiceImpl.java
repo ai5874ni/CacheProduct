@@ -3,6 +3,7 @@ package com.cache.eshop.product.service.impl;
 import com.cache.eshop.product.mapper.ShopInfoMapper;
 import com.cache.eshop.product.model.ShopInfo;
 import com.cache.eshop.product.service.ShopInfoService;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 
